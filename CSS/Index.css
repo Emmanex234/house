@@ -1,0 +1,439 @@
+@import url(../CSS/media.css);
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../Images/Design\ 1.jfif);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.nav{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0 0 35px;
+    align-items: center; 
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+}
+.logo{
+    width: 110px;
+    opacity: 0.3;
+}
+#logoname{
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(1);
+    color: #fff;
+    font-style: italic;
+    opacity: 0.6;
+}
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+.nav ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+.nav ul li:hover::after{
+    width: 100%;
+}
+#bar{
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    visibility: hidden;
+}
+#cancel{
+color: aliceblue;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.content p{
+margin: 20px ;
+line-height: 25px;
+font-size: 30px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 00.9s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+.div{
+    width: 100%;
+    display: grid;
+grid-template-columns: repeat(1 , 1fr);
+grid-template-rows: repeat(2 minmax(10rem auto));
+}
+.div p{
+    width:fit-content;
+}
+section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../Images/black2.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+}
+main{
+ margin: 1%;
+padding: 1%;
+width: 100%;
+display: grid;
+grid-template-columns: repeat(2 , 1fr);
+grid-template-rows: repeat(1 minmax(10rem auto));
+}
+.button{
+    border-radius: 30px;
+    width: 90%;
+    padding: 20px;
+    background: url(../Images/Living\ 6.webp) no-repeat center;
+}
+
+ p{
+    font-size: 20px;
+    color: #fff;
+    margin: 5px;
+
+}
+h3{
+    color:red;
+    font-size:20px;
+    /* margin:30px; */
+    font-style: italic; 
+    text-align: center;
+    border:none;
+    background-color:none;
+    width: 100%;
+    height: 5vh;
+
+}
+#Slider{
+    margin:20px;
+    width: 0px;
+    height: 6 0px;
+    margin-top:10px;
+    padding: none;
+    position: relative;
+}
+#Slider a{
+    position: absolute;
+}
+#Slider a img{
+    width: 600px;
+    height:450px;
+}
+#Slider a:nth-of-type(1){
+    animation-name: fader;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    z-index: 20;
+}
+@keyframes fader{
+    from{opacity: 1.0;}
+    to{opacity: 0.0;};
+}
+.team{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(1 minmax());
+    gap: 5%;
+    padding-right: 5%;
+
+}
+.timg{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.p{
+font-size: 15px;
+text-align: center;
+color:black;
+}
+.our{
+    display: flex;
+}
+.our img{
+    width: 80%;
+}
+.our h2{
+    padding-top: 20%;
+    font-size: 40px;
+    font-style: italic;
+    color: #009688;
+    text-decoration: underline;
+}
+.row-tap ul {
+    display: flex;
+    list-style: none;
+    
+}
+.row-tap div{
+    color: #fff;
+    font-size: 20px;
+}
+.row-tap ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+.popup{
+    width: 320px;
+    background:rgba(192, 192, 192,0.8);
+    border-radius: 20px;
+    position: absolute;
+    top:30%;
+    color: black;
+    left: 30%;
+    transform: translate(-50%,-50% ) scale(1);
+    text-align: left;
+    visibility: hidden;
+    transform:  transform 0.4s, top 0.4s;
+}
+.slider-pop{
+    visibility: hidden;
+    position: absolute;
+    top: 50;
+    transform: translate(-50%,-50% ) scale(1);
+    transform:  transform 0.4s, top 0.4s;
+}
+.openSlider-popup{
+    visibility: visible;
+    top: 120%;
+    transform: translate(-50%,-50% ) scale(1);
+}
+.open-popup{
+    visibility: visible;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50% ) scale(1);
+}
+form{
+    width: 80%;
+   padding: 2rem;
+}
+label{
+    font-size: 15px;
+    font-style: italic;
+}
+.submit{
+    padding: 20px;
+    border-radius: 30px;
+    color: #009688;
+}
+   
+.popup form legend{
+    font-size: 20px;
+    border: solid 1px;
+    text-align: center;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.75);
+    color: #fff;
+}
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+#contact{
+    width: 100%;
+    height: 50vh;
+    background: url(../Images/bedroomnew3.jpg) no-repeat center scroll;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+.contact-content{
+    width: 100%;
+    padding-left: 10%;
+    top: 100%;
+    transform: translateY(150%);
+    color: #0000;
+}
+.contact-content p1{
+    color: #fff;
+    font-weight: 700;
+    font-size: 40px;
+    font-style: italic;
+    border-radius: 1px;
+    border-radius: 20%;
+    box-shadow: 0px 10px;  
+}
+.con{
+    width: 100%;
+    height: 70vh;
+    overflow-x: hidden;
+    display: flex;
+    padding: 10%;
+    background-color: rgba(192, 192, 192, 0.2);
+}
+.con2 legend{
+font-size: 30px;
+font-weight: none;
+text-decoration: dashed;
+}
+.con1{
+    border: none;
+    width: 50%;
+}
+.con1 legend{
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    color: grey;
+}
+.sub{
+    width: 100%;
+
+}
+.onclick{
+    width: 100%;
+    background: grey;
+    color: white;
+    border-radius: 25px;
+    box-shadow: 0px 10px;
+}
+.sliderbtn{
+    width: 30%;
+    border-radius: 25px;
+    z-index: 99;
+    padding-right: 100%;
+    padding-top: 100%;
+}
+.con2{
+    border: solid;
+    width: 20%;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 10%;
+    background: grey;
+    color: #fff;
+    height: 70vh;
+}
+.con2 input{
+    width: 15%;
+    border-radius: 30px;
+    background: rgba(128, 128, 128,);
+}
+.con2 input{
+    border-radius: 100%;
+    height: 10%;
+    width: 20%;
+}
+.flex{
+    display: flex;
+    gap: 2%;
+}
+.footimg{
+    display: flex;
+    width: 50%;
+    gap: 0%;
+}
+.footimg img{
+    width: 80px;
+    height: 80px;
+
+}
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+grid-template-rows: repeat(1 minmax( auto));
+padding-left: 10%;
+padding-top: 5%;
+background: rgba(192, 192, 192, 0.5);
+
+}
+.foot1{
+    width: 40ch;
+}
+.conbtn{
+    border-radius: 70px;
+    width: 5%;
+box-shadow:silver 0px 40px;
+}
+#Message{
+    width: 100%;
+    height: 35vh;
+}
+message{
+    display: flex;
+}
+message .Success{
+    background-color: green;
+    color: green;
+    display: none;
+}
+message .Danger{
+    background-color: red;
+    display: none;
+    z-index: 60;
+} 

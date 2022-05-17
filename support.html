@@ -1,0 +1,241 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design</title>
+    <link rel="shortcut icon" type="images/x-icon" href="./Images/LOGO.jpg">
+    <script src="https://kit.fontawesome.com/172eed12fc.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        
+    }
+.living{
+    display: grid;
+    /* to create coloum */
+    grid-template-columns: repeat(3, 1fr);
+    /* to create grid row   */
+    grid-template-rows: repeat(2, minmax(10rem, auto));
+     grid-row-gap: 20px; 
+    grid-gap: 20px;
+    width:8%;
+    margin: 2%;
+    padding: 2%;
+}
+body{
+    background-color: rgba(192, 192, 192, 0.5);
+    
+}
+h3{
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+}
+input{
+    border-radius: 25px;
+    background-color:  gray;
+    color: beige;
+}
+input:hover{
+    background-color: aqua;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+.navbar{ 
+    justify-content: space-between;
+    display: flex;
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+p{
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+    font-style: italic;
+}
+.img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* to create grid row   */
+    grid-template-rows: repeat(3, minmax(10rem, auto));
+     grid-row-gap: 20px; 
+    grid-gap: 20px;
+    width:8%;
+    margin: 2%;
+    padding: 2%;
+}
+.footer{
+    display: flex;
+    width: 80%;
+    height: 30vh;
+    /* justify-content: space-between; */
+}
+h4{
+    font-size: 30px;
+    font-weight: none;
+    font-style: italic;
+    padding-left: 15%;
+}
+.img{
+    width: 10%;
+}
+@media(max-width:600px){
+    img{
+        width: 100px;
+        height: 100px;}
+
+        p{
+            width: 35ch;
+        }
+        .navbar input{
+            display: none;
+            width: auto;
+        }
+        .navbar{
+            width: 100%;
+        }
+        .contact{
+            display: inline-block;
+            gap:30px;
+        }
+        body{
+            width:70%;   
+            height: 70vh;
+        
+         }
+}
+</style>
+<body>
+    <div class="navbar">
+        <div>
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email">
+    </div>
+    <div>
+        <i class="fa-brands fa-facebook"></i>
+        <input type="text" value="">
+    </div>
+    <div>
+        <i class="fa-brands fa-facebook-messenger"></i>
+        <input type="text" value="">
+    </div>
+    <div>
+        <i class="fa-brands fa-whatsapp"></i>
+        <input type="tel" value="">
+    </div>
+        <i class="fa-solid fa-bars"></i>
+    </div>
+    <h3>Checkout beautiful<br> design for our clients</h3>
+    <p> We serve you better with your choice, Checkout the design you wish to design and we are here to help you make your dreams come true.</p>
+    <div class="living">
+        <div>
+         <img src="./Images/Living1.png" alt="living room image" title="living room" width="400" height="400">
+         <input type="button" value="Click to Order">
+        </div>
+        <div>
+         <img src="./Images/Living 2.png" alt="living room image" title="living room" width="400" height="400">
+         <input type="button" value="Click to Order">
+        </div>
+         <!-- <img src="./Images/Living 3.png" alt="living room image" title="living room"width="500" height="500"> -->
+         <div>
+         <img src="./Images/Livin 3.webp" alt="living room image" title="living room"width="400" height="400">
+         <input type="button" value="Click to Order">
+        </div>
+        <div>
+         <img src="./Images/Living 4.jpg" alt="living room image" title="living room"width="400" height="400">
+         <input type="button" value="Click to Order">
+        </div>
+        <div>
+         <img src="./Images/Living 5.jpg" alt="living room image" title="living room"width="400" height="400">
+         <input type="button" value="Click to Order">
+        </div>
+        <div>
+         <img src="./Images/Living 6.webp" alt="living room image" title="living room"width="400" height="400">
+         <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/bedroom new.jpg" alt="bed room image" title="bedroom" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/Bedroom.jpg" alt="bed room image" title="bedroom" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/bedroomnew2.png" alt="bed room image" title="bedroom" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/bedroomnew3.jpg" alt="bed room image" title="bedroom" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/Kitchen.jpeg" alt="Kitchen image" title="Kitchen" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+        <img src="./Images/About 1.jpg"alt="Beautiful house" title="Home" width="400" height="400">
+        <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/About 2.jpg" alt="Beautiful house" title="Home" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/About 3.jfif" alt="Beautiful house" title="Home" width="400" height="400">
+            <input type="button" value="Click to Order">
+        </div>
+        <div>
+            <img src="./Images/Dinning.webp" alt="Dining" title="Dinning" width="400" height="400" >
+            <input type="button" value="Click to Order">
+        </div>
+    </div>
+    <br>
+    <h3>Men at work</h3>
+    <p>
+        Below are some of our ongoing contruction <br> Your Stastisfaction is our priority<br>
+        Contact Us let design your home!!!!!!!!
+    </p>
+     <div class="img">
+         <!-- <h3>Men at work</h3> -->
+         <img src="./Images/1.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/2.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/3.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/4.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/5.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/6.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/7.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/8.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/9.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/10.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/11.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/12.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/13.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/14.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <img src="./Images/15.jpg" alt="On work" title="Uncompleted building" width="400" height="400">
+         <!-- <img src="./Images/16.jpg" alt="On work" title="Uncompleted building" width="400" height="400"> -->
+    </div>
+    <h4>Follow Us</h4>
+<div class="footer">
+    <img src="./Images/LOGO.jpg" class="img">
+    <img src="./Images/Facebook.png" class="img">
+    <img src="./Images/Instagram.png" class="img">
+    <img src="./Images/Gmail.png" class="img">
+    <img src="./Images/Address2.png" class="img">
+</div>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emma's Contruction Company</title>
+    <link rel="shortcut icon" type="images/x-icon" href="./Images/LOGO.jpg">
+    <link rel="stylesheet" href="../House Design/CSS/Index.css">
+    <link rel="stylesheet" href="./CSS/media.css">
+     <script src="https://kit.fontawesome.com/172eed12fc.js" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div class="banner">
+<nav class="nav">
+    <div id="logoname">
+<img src="../House Design/Images/LOGO.jpg" class="logo">
+<legend>Emma's Contruction</legend>
+</div>  
+<ul id="ul">
+    <li><a href="#">Home</a></li>
+    <li><a href="#Living">Design</a></li>
+    <li><a href="#h2">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+<i class="fa-solid fa-bars" id="bar"></i>
+<!-- <input type="button" id="bar"> -->
+<!-- <i class="fa-solid fa-xmark-large" id="cancel"></i> -->
+<!-- <i class="fa-solid fa-xmark-large"></i> -->
+</nav>
+<div class="content">
+<h1>DESIGN YOUR HOUSE</h1>
+<p>Call in for the best designer accomodation</p>
+
+<a href="C:\Users\personal\Desktop\House Design\support.html"><button type="button"><span></span>DESIGN</button></a>
+
+<div>
+<button  type="button" onclick="openPopup()"><span></span>GET APPOINTMENT</button>
+<div class="popup" id="popup">
+    <form>
+        <legend>Application</legend>
+        <br>
+        <br>
+        <input type="text" placeholder="Name" id="Name" required>
+         
+        <input type="email" placeholder="Email" id="Email" required>
+        <br>
+        <br><br>
+        <input type="text" placeholder="Subject" class="sub" id="Subject" required>
+        <br><br>
+
+        <textarea rows="" cols=""  placeholder="Qualification?" id="Message" required ></textarea>
+        <br><br>
+        <input type="button" value="Send Message" class="send" id="Send" onclick="message()">
+        <message>
+        <div class="Success" id="Success" style="color: green;">
+            <p>Your Message Successfully Sent !</p>
+        </div>
+        <div class="Danger" id="Danger" style="color: red;"> 
+            <p>Field Can't be Empty !</p>
+            </div>
+        </message>
+    </form>
+     <input type="button" class="submit" onclick="closePopup()" value="HOME" ></input>
+        </div>
+
+</div>
+</div>
+</div>
+    </div>
+    <section id="h2">
+        <br>
+        <br>
+    <h3>About Us</h3>
+    <main>
+    
+<div class="div">
+    <div class="row">
+    <h3>About us</h3>
+    <p> 
+     A Real Estate Company whose covers both accomodation sourcing and renting for Client and contruction of builing and others civil related infrastructure. 
+A logo  was designed. The logo contains a fine root and Window attached to portray the organisation involvement
+in the sourcingand renting of finished building, below the fine roof is a sketch of two different sizes of building which 
+portray the organisation involvement in contruction of different sizes of building. 
+ We design your:
+Living Room,
+Bedroom etc.
+</p>
+</div>
+<div class="row-tap">
+    <ul>
+        <li><button type="button"><a href="#div1">10+ years Experience</a></button></li>
+        <li><button type="button"><a href="#div2">Our Mission</a></button> </li>
+        <li><button type="button"><a href="#div3">Our Services</a></button></li>
+     </ul>
+
+<div id="div1"> Our highly trained attorneys, paralegals and staff exclusively utilize state-of-the-art tech and products to not only meet your expectations, but also exceed them. Our number one priority is to serve our clients across Nigeria with the highly standards of ethics and customer service since 2005
+</div>
+
+<div id="div2">To deliver  only when production reach and exceeded client expectations in terms of quality, budget optimization, time frame and customer service, taking into account our corporate social responsibility when   it comes to safety and environment in every project</div>
+
+<div id="div3">
+        Design Houses
+        <br>
+        Allocation Accommodation
+        <br>
+        Buy and sale of Accommodation
+</div>
+</div>
+</div>
+<input  type="button" onclick="sliderOpen()" class="button"></input>
+<div class="slider-pop"   id="slider-pop"> 
+    <div id="Slider" >
+        <a href="1"><img src="../House Design/Images/About 2.jpg"></a> 
+        <a href="2"><img src="../House Design/Images/Sitting room.jfif"></a>
+        <a href="3"><img src="../House Design/Images/Bedroom.jpg"></a>
+        <a href="4"><img src="../House Design/Images/Kitchen.jpeg"></a>
+        <a href="5"><img src="../House Design/Images/Dinning.webp"></a>
+        </div>
+        <input type="button" onclick="SliderClose()"  class="sliderbtn">
+</div>
+
+    </main>
+</section>
+<br>
+<div class="our">   
+<img src="./Images/Background.jpeg">
+<h2>Our Team</h2>
+</div>
+<div class="team">
+   
+     <div>
+         <img src="./Images/Male.jpeg" alt="Worker" title="Worker" class="timg">
+         <h3>Engr. Johnson Godswin</h3>
+         <p class="p">CEO<br>
+        He has been been working since 2005
+         </p>
+     </div>
+     <div>
+        <img src="./Images/female.jpg" alt="Worker" title="Worker" class="timg">
+        <h3>Engr. Maria Udofot</h3>
+        <p class="p">Sectary <br>
+          M.tech in building technology
+        </p>
+     </div>
+     <div>
+        <img src="./Images/Male2.jpg" alt="Worker" title="Worker" class="timg">
+        <h3>Engr. John Paul</h3>
+        <p class="p">Chief Contractor</p>
+     </div>
+     
+</div>
+<div id="contact">
+    <div class="contact-content">
+        <div style="display: flex; gap: 20px;">
+        <input type="button" value="HOME" class="conbtn" id="btn">
+        <p><a href="#ul"></a>Contact</p>
+    </div>
+    <br>
+    <br>
+        <p1>CONTACT US</p1>
+    </div>
+</div>
+<div class="con">
+     <div class="con1">
+    <form>
+        <legend>GET IN TOUCH</legend>
+        <br>
+        <br>
+        <input type="text" placeholder="Name" id="Name">
+        <div class="usererror" >
+        </div>
+         <br>
+        <input type="email" placeholder="Email" id="Email">
+        <div class="usererror1"></div>
+        <br>
+        <br><br>
+        <input type="text" placeholder="Subject" class="sub" id="Subject">
+        <div class="usererror2"></div>
+        <br><br>
+
+        <textarea rows="" cols=""  placeholder="Write Message" id="Message"  ></textarea>
+        <div class="usererror2"></div>
+        <br><br>
+        <input type="button" value="Send Message" class="onclick" id="Send">
+    </form>
+     </div>
+     <div class="con2">
+    <legend>Contact Us</legend>
+    <br><br>
+
+    
+    <input type="button">
+    <div class="flex">
+    <label>Address:</label>
+    <br>
+    <address>47-Ikpa road, Uyo</address>
+</div>
+<br><br>
+    <input type="button"><br>
+    <div class="flex">
+    <label>Phone:</label>
+
+    <address>(+234) 9037195528</address>
+</div>
+<br>
+<br>
+<div>
+    <input type="button">
+    <div class="flex">
+    <label>Email:</label>
+    <br>
+    <address>emmanex34@yahoo.com</address>
+</div>
+</div>
+     </div>
+     
+</div>
+
+<div class="footer">
+<div class="foot1">
+    <img src="./Images/LOGO.jpg" class="logo">
+    <br><br>
+    <p style="color:black;">
+        Emma's Contruction company is a Real Estate Company whose covers both accomodation sourcing and renting for Client and contruction of builing and others civil related infrastructure. 
+    </p>
+</div>
+<div class="foot2">
+    <h1>Services</h1>
+    <br><br>
+    <ul>
+        <li>Design Bedroom</li>
+        <li>Design Living room</li>
+        <li>Design Kitchen</li>
+        <li>Design dinning</li>
+        <li>Building Houses in general</li>
+    </ul>
+
+</div>
+<div class="foot3">
+    <h1>Contact Information</h1>
+<br><br>
+
+    <address> 47 Ikpa Road Uyo,<br>
+    Akwa-Ibom State<br>
+    Nigeria
+</address>
+<br>
+<p style="color: black;">
+    (+234)-9037195528<br>
+    emmanueludofot40@gmail.com
+</p>
+<footer class="footimg">
+    <img src="./Images/Twitter.png">
+    <img src="./Images/Instagram.png">
+    <img src="./Images/Gmail.png">
+    <img src="./Images/Facebook.png">
+</footer>
+</div>
+</div>
+</body>
+<script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <!-- <script src= "./js/intro.min.js"></script> -->
+    <script src="./js/index.js"></script>   
+</html> 
