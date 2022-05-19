@@ -66,10 +66,6 @@ main{
     width: 50ch;
 }
 body{
-    /* overflow: hidden; */
     width: 110%;
-}
-.div{
-    /* display: block; */
 }
  }
