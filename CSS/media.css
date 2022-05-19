@@ -1,4 +1,4 @@
- @media (max-width: 860px) {
+ @media screen and (max-width: 855px) {
     #bar{
         color: #fff;
         cursor: pointer;
@@ -36,13 +36,16 @@
     color: #fff;
     font-size: 20px;
     width: 75ch;
-    padding-left:0%;
+    padding-left:25%;
 }
 .row-tap ul button{
     width: 50%;
 }
 .row-tap p{
     font-size: 18px;
+}
+.content{
+    padding-left: 70%;
 }
 .content h1{
     font-size: 35px;
@@ -53,6 +56,7 @@
 }
 .footer{
     display: block;
+    width: 120%;
 }
 .team{
     height: 50vh;
@@ -61,11 +65,34 @@
 .our h2{
     font-size: 20px;
 }
-/* main{
-    width: 50ch;
-    display: block;
-} */
 body{
-    width: 100%;
+    width:100%;
+    /* overflow: hidden; */
+    /* overflow-y: hidden; */
+}
+.con{
+    width: 130%;
+}
+#contact{
+    width: 130%;
+}
+.team{
+    width: 130%;
+}
+.our{
+    width: 130%;
+}
+section{
+    width: 130%;
+}
+.banner{
+    width: 130%;
 }
  }
+
+@media screen and (max-width:699px){
+    body{
+        width: fit-content;
+        overscroll-behavior: none;
+    }
+}
