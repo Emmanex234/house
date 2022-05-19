@@ -17,7 +17,7 @@ body{
     background-attachment: fixed;
 }
 .nav{
-    width: 85%;
+    width: 90%;
     margin: auto;
     padding: 35px 0 0 35px;
     align-items: center; 
@@ -82,7 +82,7 @@ color: aliceblue;
 }
 
 .content h1{
-    font-size: 70px;
+    font-size: 60px;
     margin-top: 80px;
 }
 
@@ -124,17 +124,7 @@ button:hover span{
 }
 button:hover{
     border:none;
-}
 
-.div{
-    padding-left: 1%;
-    padding-right: 1%;
-    display: grid;
-grid-template-columns: repeat(2 , 1fr);
-grid-template-rows: repeat(1, minmax(10rem auto));
-}
-.div p{
-    width:60ch;
 }
 section{
     width: 100%;
@@ -143,6 +133,7 @@ section{
     background-size: cover;
     background-position: center;
     background-attachment: local;
+    text-align: center;
 }
 
 .button{
@@ -219,7 +210,7 @@ color:black;
     display: flex;
 }
 .our img{
-    width: 80%;
+   width:70% ;
 }
 .our h2{
     padding-top: 20%;
@@ -231,16 +222,20 @@ color:black;
 .row-tap ul {
     display: flex;
     list-style: none;
+    padding-left: 25%;
     
 }
 .row-tap div{
     color: #fff;
     font-size: 20px;
+    width: 75ch;
+    padding-left: 15%;
 }
 .row-tap ul li a{
     text-decoration: none;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    width: 2%;
 }
 .popup{
     width: 320px;
@@ -274,7 +269,7 @@ color:black;
     transform: translate(-50%,-50% ) scale(1);
 }
 form{
-    width: 80%;
+    width: 100%;
    padding: 2rem;
 }
 label{
@@ -309,7 +304,7 @@ label{
 }
 .contact-content{
     width: 100%;
-    padding-left: 10%;
+    padding-left: 5%;
     top: 100%;
     transform: translateY(150%);
     color: #0000;
@@ -329,7 +324,7 @@ label{
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
-    padding: 10%, 10%, 10%, 5%;
+    justify-content: space-between;
     background-color: rgba(192, 192, 192, 0.2);
 }
 .con2 legend{
@@ -395,8 +390,8 @@ text-decoration: dashed;
     gap: 0%;
 }
 .footimg img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 
 }
 .footer{

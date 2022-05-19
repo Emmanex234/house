@@ -4,7 +4,8 @@
         cursor: pointer;
         font-size: 20px;
         visibility: visible;
-        width: 30px;
+        width: 20px;
+        /* padding-right: 20%; */
     }
     
  .nav ul {
@@ -28,19 +29,20 @@
     font-size: 30px;
 }
 #div1, #div2,#div3{
-    font-size: 12px;
+    font-size: 18px;
+    width: 70%;
 }
-
-.row-tap ul {
-    display: block; 
-    /* list-style: none; */
-    /* width: 5%; */
-    /* border-radius: none; */
-    /* border: #fff 1px; */
-    
+.row-tap ul{
+    color: #fff;
+    font-size: 20px;
+    width: 75ch;
+    padding-left:0%;
 }
-.row p{
-    font-size: 12px;
+.row-tap ul button{
+    width: 50%;
+}
+.row-tap p{
+    font-size: 18px;
 }
 .content h1{
     font-size: 35px;
@@ -53,19 +55,17 @@
     display: block;
 }
 .team{
-    /* display: block; */
-    height: 30vh;
-    /* width: 40%; */
-    /* align-items: center; */
+    height: 50vh;
 
 }
 .our h2{
     font-size: 20px;
 }
-main{
+/* main{
     width: 50ch;
-}
+    display: block;
+} */
 body{
-    width: 110%;
+    width: 100%;
 }
  }
