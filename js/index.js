@@ -79,7 +79,6 @@ if (Name == '') {
 else {
     document.querySelector('.usererror').textContent = `success`;
 }
-
 var email = document.querySelector(`#Email`).value;
 var emailContact = /^([a-z0-9]+)@([a-z]+).([a-z]{2,5})(.[a-z]{2,3})?$/;
 

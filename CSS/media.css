@@ -59,5 +59,17 @@
     /* align-items: center; */
 
 }
-
+.our h2{
+    font-size: 20px;
+}
+main{
+    width: 50ch;
+}
+body{
+    /* overflow: hidden; */
+    width: 110%;
+}
+.div{
+    /* display: block; */
+}
  }

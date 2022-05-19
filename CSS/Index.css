@@ -125,31 +125,26 @@ button:hover span{
 button:hover{
     border:none;
 }
+
 .div{
-    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
     display: grid;
-grid-template-columns: repeat(1 , 1fr);
-grid-template-rows: repeat(2 minmax(10rem auto));
+grid-template-columns: repeat(2 , 1fr);
+grid-template-rows: repeat(1, minmax(10rem auto));
 }
 .div p{
-    width:fit-content;
+    width:60ch;
 }
 section{
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../Images/black2.webp);
     background-size: cover;
     background-position: center;
     background-attachment: local;
 }
-main{
- margin: 1%;
-padding: 1%;
-width: 100%;
-display: grid;
-grid-template-columns: repeat(2 , 1fr);
-grid-template-rows: repeat(1 minmax(10rem auto));
-}
+
 .button{
     border-radius: 30px;
     width: 90%;
@@ -164,7 +159,7 @@ grid-template-rows: repeat(1 minmax(10rem auto));
 
 }
 h3{
-    color:red;
+    color:#009688;
     font-size:20px;
     /* margin:30px; */
     font-style: italic; 
@@ -330,10 +325,11 @@ label{
 }
 .con{
     width: 100%;
-    height: 70vh;
+    height: 90vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
-    padding: 10%;
+    padding: 10%, 10%, 10%, 5%;
     background-color: rgba(192, 192, 192, 0.2);
 }
 .con2 legend{
@@ -371,7 +367,7 @@ text-decoration: dashed;
 }
 .con2{
     border: solid;
-    width: 20%;
+    width: 50%;
     padding-top: 5%;
     padding-left: 5%;
     padding-right: 10%;
