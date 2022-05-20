@@ -226,13 +226,13 @@ color:black;
     width: 2%;
 }
 .popup{
-    width: 320px;
+    width:320px ;
     background:rgba(192, 192, 192,0.8);
     border-radius: 20px;
     position: absolute;
     top:30%;
     color: black;
-    left: 30%;
+    left: 40%;
     transform: translate(-50%,-50% ) scale(1);
     text-align: left;
     visibility: hidden;
@@ -257,7 +257,7 @@ color:black;
     transform: translate(-50%,-50% ) scale(1);
 }
 form{
-    width: 100%;
+    width: 87%;
    padding: 2rem;
 }
 label{

@@ -36,16 +36,13 @@
     color: #fff;
     font-size: 20px;
     width: 75ch;
-    padding-left:25%;
+    padding-left:30%;
 }
 .row-tap ul button{
     width: 50%;
 }
 .row-tap p{
     font-size: 18px;
-}
-.content{
-    padding-left: 70%;
 }
 .content h1{
     font-size: 35px;
@@ -55,8 +52,9 @@
     position: relative;
 }
 .footer{
-    display: block;
+    display: flex;
     width: 120%;
+    gap: 5%;
 }
 .team{
     height: 50vh;
@@ -94,5 +92,10 @@ section{
     body{
         width: fit-content;
         overscroll-behavior: none;
+    }
+}
+@media screen and (max-width:500px){
+    .content{
+        padding-left: 90%;
     }
 }
