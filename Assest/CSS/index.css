@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.Banner{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/Assest/Images/Design\ 1.jfif);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.check{
+    display: none;
+}
+#bar{
+    display: none;
+    color: aliceblue;
+}
+ul li::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: rgba(0, 150, 136, 0.5);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+ul li:hover::after{
+    width: 100%;
+}
+.caption img{
+    transform: scale(0.8);
+    opacity: 0.3;
+}
+.caption p{
+    color: aliceblue;
+    font-style: italic
+}
+.Content{
+    text-align: center;
+    padding-top: 1.5rem;
+    color: aliceblue;
+}
+.Content h2{
+    font-size: 3rem;
+}
+.Content p{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+.button{
+    text-align: center;
+    padding-top: 2rem;
+} 
+.button button{
+    border-radius: 3rem;
+    height: 3rem;
+    border: solid 2px rgba(0, 150, 136,0.6);
+    padding: 1rem;
+    background: transparent;
+    color: aliceblue;
+    cursor: pointer;
+    position: relative;
+}
+.button span{
+    background: rgba(0, 150, 136,0.5);
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -0.5;
+    transition: 00.9s;
+}
+.button button:hover span{
+    width: 100%;
+}
+.button button:hover{
+    border:none;
+}
+/* popup */
+.popup{
+    background:rgba(192, 192, 192,0.8);
+    border-radius: 20px;
+    position: absolute;
+    top:40%;
+    color: black;
+    left: 40%;
+    transform: translate(-50%,-50% ) scale(1);
+    text-align: left;
+    visibility: hidden;
+    transform:  transform 0.4s, top 0.4s;
+    padding: 0.5rem;
+}
+.popup legend{
+    text-align: center;
+    font-size: 1.5rem;
+    top: 3rem;
+}
+.popup button{
+    width: 50%;
+    font-size: 1rem;
+    text-align: center;
+}
+.open-popup{
+    visibility: visible;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,-50% ) scale(1);
+}
+.About{
+    background:rgba(192, 192, 192,0.7) ;
+    text-align: center;
+    padding-top: 2rem;
+    height: 50vh;
+}
+.row-tap{
+    /* text-align: left; */
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+.row-tap button{
+    border: solid 2px rgba(0, 150, 136,0.5) ;
+    border-radius: 2rem;
+    background: rgba(0, 150, 136,0.5);
+    height: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.row-tap a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: aliceblue;
+}
+.About h5{
+    text-align: left;
+    border: none 1px;
+    padding-left: 1rem;
+    /* width: 15%; */
+    background:transparent;
+}
+.team-head{
+    display: inline-block;
+    /* justify-content: space-between; */
+    background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/Assest/Images/Background.jpeg);
+    height: 40vh;
+    width: 100%;
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+.team-head h3{
+    padding-top: 10%;
+    padding-left: 70%;
+    font-style: italic;
+    text-decoration:underline;
+    font-size: 1.5rem;
+    color: aliceblue;
+
+}
+.team{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: repeat(1, minmax());
+    gap: 1%;
+    overflow-x: scroll;
+    padding-left: 1.4rem;
+}
+.team img{
+    height: 300px;
+    width: 400px;
+    border: solid 3px white;
+    border-radius: 25px;
+}
+.team-back{
+    background: grey;
+}
+.text{
+    text-align: center;
+    color: aliceblue;
+}
+.contact-back{
+    background: url(/Assest/Images/bedroomnew3.jpg) no-repeat center scroll;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+}
+.contact-content{
+    padding-top: 10%;
+    padding-left: 10%;
+    display: flex;
+    gap: 1rem;
+}
+.contact-content h2{
+    font-size: 2rem;
+    text-decoration: underline;
+    color: aliceblue;
+}
+.contact-content input{
+    width: 10%;
+    border-radius: 25px;
+    background: black;
+    color: aliceblue;
+}
+
+.contact{
+    display: flex;
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-bottom: 5%;
+    gap: 2rem;
+    overflow-x: hidden;
+    background: silver;
+}
+.con1{
+    width: 40%;
+}
+.con1 input{
+    width: 100%;
+    height: 15%;
+}
+.onclick{
+    background: gray;
+    color: aliceblue;
+    border: none;
+}
+textarea{
+    width: 100%;
+    height: 50%;
+}
+.con2{
+    width: 40%;
+    background: gray;
+    padding-left: 5%;
+    padding-top: 5%;
+    border-radius: 25%;
+    color: aliceblue;
+}
+.con2 legend{
+    font-size: 2rem;
+}
+.con2 input{
+    width: 10%;
+    border-radius: 25px;
+    background: silver;
+}
+.flex{
+    display: flex;
+}
+.footer{
+    display: flex;
+    gap: 5%;
+    padding: 5%;
+    background: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+}
+.img img{
+    height: 50px;
+    width: 50px;
+}
